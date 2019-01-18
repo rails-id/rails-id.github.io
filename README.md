@@ -1,6 +1,6 @@
-# Beranda Ruby on Rails
+# Beranda Ruby on Rails Indonesia
 
-Repositori ini menghasilkan apa yang ada di situs web https://rails.id.
+Repositori ini menghasilkan apa yang ada di situs web http://rails.id.
 
 ## Kontribusi
 
