@@ -1,0 +1,17 @@
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+title: Ruby on Rails Indonesia
+description: Kerangka kerja aplikasi web yang mencakup semua yang diperlukan untuk membuat aplikasi web yang didukung database sesuai dengan pola Model-View-Controller (MVC).
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://avatars.githubusercontent.com/u/46654718
