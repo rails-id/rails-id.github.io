@@ -3,5 +3,8 @@
 
 /_site
 Gemfile.lock
+/.idea
+/.vscode
+.DS_Store
 deploy_key
 deploy_key.pub
