@@ -1,25 +1,26 @@
 sudo: false
 language: ruby
 rvm:
-- 2.6.0
+  - 2.6.0
 cache: bundler
 before_install:
-- openssl aes-256-cbc -K $encrypted_9c5355402a97_key -iv $encrypted_9c5355402a97_iv
-  -in deploy_key.enc -out ./deploy_key -d
-- eval "$(ssh-agent -s)"
-- chmod 600 ./deploy_key
-- echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-- ssh-add ./deploy_key
-- ssh -i ./deploy_key railsid@$SERVER_IP_ADDRESS -p $PORT pwd
-- git remote add deploy $REMOTE_FOR_DEPLOY
+  - openssl aes-256-cbc -K $encrypted_9c5355402a97_key -iv $encrypted_9c5355402a97_iv
+    -in deploy_key.enc -out ./deploy_key -d
+  - eval "$(ssh-agent -s)"
+  - chmod 600 ./deploy_key
+  - echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - ssh-add ./deploy_key
+  - ssh -i ./deploy_key railsid@$SERVER_IP_ADDRESS -p $PORT pwd
+  - git remote add deploy $REMOTE_FOR_DEPLOY
 install:
-- gem update --system
-- bundle install
-- jekyll build
+  - gem update --system
+  - bundle install
+  - rake test:yaml
+  - jekyll build
 branches:
   only:
-  - master
+    - master
 after_success:
-- git push deploy master
+  - git push deploy master
 notifications:
   email: false

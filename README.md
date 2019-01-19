@@ -5,13 +5,28 @@
 
 Repositori ini menghasilkan apa yang ada di situs web http://rails.id.
 
-## Menguasai GitHub Pages
-- https://github.com/github/pages-gem
+## Petunjuk umum
+
+##### Tidak lupa untuk bundle sumber Gemfile:
+```
+bundle install
+```
+
+##### Untuk build sumber kode:
+```
+jekyll build
+```
+
+##### Untuk melihat hasil build:
+```
+jekyll serve
+```
 
 ## Kontribusi
-
 Jika Anda melihat kesalahan pengejaan atau penanda versi terbaru tidak sinkron, harap kirimkan pull request.
 
-## Lisensi
+## Referensi
+- https://github.com/github/pages-gem
 
+## Lisensi
 Ruby on Rails Indonesia dirilis di bawah [Lisensi MIT](https://opensource.org/licenses/MIT).
