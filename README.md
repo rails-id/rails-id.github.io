@@ -25,6 +25,18 @@ jekyll serve
 ## Kontribusi
 Jika Anda melihat kesalahan pengejaan atau penanda versi terbaru tidak sinkron, harap kirimkan pull request.
 
+Bagi member organisasi Ruby on Rails Indonesia bisa kontribusi langsung di remote `git@github.com:rails-id/rails-id.github.io.git`
+
+```
+git clone git@github.com:rails-id/rails-id.github.io.git
+```
+
+Dan bagi yang non member Ruby on Rails Indonesia diharuskan untuk fork repositori, dan melakukan pull request
+
+```
+git clone git@github.com:$USERNAME/$NAME_OF_REPOSITORY.git
+```
+
 ## Referensi
 - https://github.com/github/pages-gem
 
