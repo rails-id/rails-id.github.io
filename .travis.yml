@@ -21,8 +21,8 @@ branches:
     - master
 after_success:
   - git clone $REMOTE_FOR_DEPLOY repository
-  - mv _site/* repository/
+  - mv _site/* repository -f
   - cd repository && git add --all && git commit -m "Deploy!"
-  - git push deploy master
+  - git push origin master
 notifications:
   email: false
