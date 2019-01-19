@@ -9,7 +9,9 @@ plugins:
   - jekyll-sitemap
 
 title: Ruby on Rails Indonesia
-description: Kerangka kerja aplikasi web yang mencakup semua yang diperlukan untuk membuat aplikasi web yang didukung database sesuai dengan pola Model-View-Controller (MVC).
+description: Framework aplikasi web yang mencakup semua yang diperlukan untuk membuat aplikasi web yang didukung database sesuai dengan pola Model-View-Controller (MVC).
+image: https://avatars.githubusercontent.com/u/46654718
+lang: id_ID
 defaults:
   - scope:
       path: ""
