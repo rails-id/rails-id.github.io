@@ -21,6 +21,8 @@ branches:
   only:
     - master
 after_success:
+  - ls _site
+  - ls ./_site
   - git push deploy master
 notifications:
   email: false
