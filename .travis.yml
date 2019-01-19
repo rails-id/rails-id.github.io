@@ -20,7 +20,7 @@ branches:
   only:
     - master
 after_success:
-  - cd ./_site && git init && git add --all && git commit -m 'Deploy!' && git remote add deploy $REMOTE_FOR_DEPLOY
+  - cd ./_site && echo "deploy_key*" >> .gitignore && git init && git add --all && git commit -m 'Deploy!' && git remote add deploy $REMOTE_FOR_DEPLOY
   - git push deploy master
 notifications:
   email: false
