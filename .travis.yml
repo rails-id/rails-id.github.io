@@ -20,8 +20,7 @@ branches:
   only:
     - master
 after_success:
-  - git clone $REMOTE_FOR_DEPLOY repository
-  - mv _site/* repository -f
+  - git clone $REMOTE_FOR_DEPLOY repository && cp _site/* repository -R
   - cd repository && git add --all && git commit -m "Deploy!"
   - git push origin master
 notifications:
