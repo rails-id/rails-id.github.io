@@ -1,3 +1,3 @@
-# Kontribusi Beranda Rails Indonesia
+# Kontribusi
 
 - 
