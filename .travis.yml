@@ -1,7 +1,10 @@
 sudo: false
 language: ruby
 rvm:
+  - 2.4.5
+  - 2.5.3
   - 2.6.0
+  - ruby-head
 cache: bundler
 before_install:
   - openssl aes-256-cbc -K $encrypted_9c5355402a97_key -iv $encrypted_9c5355402a97_iv
