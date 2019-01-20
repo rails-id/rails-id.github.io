@@ -12,8 +12,9 @@ before_install:
   - ssh-add ./deploy_key
   - ssh -i ./deploy_key railsid@$SERVER_IP_ADDRESS -p $PORT pwd
 install:
-  - gem update --system && gem update
-  - bundle install
+  - travis_retry gem update --system
+  - travis_retry gem update
+  - travis_retry bundle install
   - rake test:yaml
   - jekyll build
 branches:
