@@ -14,10 +14,11 @@ before_install:
   - echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - ssh-add ./deploy_key
   - ssh -i ./deploy_key railsid@$SERVER_IP_ADDRESS -p $PORT pwd
+  - rm Gemfile.lock
 install:
   - travis_retry gem update --system
   - travis_retry gem update
-  - travis_retry bundle update --bundler
+  - travis_retry bundle install
   - rake test:yaml
   - jekyll build
 branches:
