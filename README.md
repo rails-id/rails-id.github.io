@@ -1,7 +1,7 @@
 # Beranda Ruby on Rails Indonesia
 
 [![Country](https://img.shields.io/badge/country-indonesia-blue.svg)](https://en.wikipedia.org/wiki/Indonesia)
-[![TravisCI](https://api.travis-ci.org/rails-id/rails-id.github.io.svg)](https://travis-ci.org/rails-id/rails-id.github.io)
+[![Build Status](https://travis-ci.org/rails-id/rails-id.github.io.svg)](https://travis-ci.org/rails-id/rails-id.github.io)
 
 Repositori ini menghasilkan apa yang ada di situs web [rails.id](http://rails.id).
 
