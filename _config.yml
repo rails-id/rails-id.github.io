@@ -1,3 +1,7 @@
+plugins:
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -5,16 +9,14 @@ exclude:
   - CODE_OF_CONDUCT.md
   - CONTRIBUTING.md
   - Rakefile
-  - README.md  
-
-plugins:
-  - jekyll-redirect-from
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
+  - README.md
+  - deploy_key
+  - deploy_key.enc
+  - deploy_key.pub
 title: Ruby on Rails Indonesia
 description: Framework aplikasi web yang mencakup semua yang diperlukan untuk membuat aplikasi web yang didukung database sesuai dengan pola Model-View-Controller (MVC).
 image: https://avatars.githubusercontent.com/u/46654718
+url: https://rails.id
 lang: id_ID
 defaults:
   - scope:
