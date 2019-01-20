@@ -22,6 +22,11 @@ jekyll build
 jekyll serve
 ```
 
+##### Selengkapnya kalian bisa melihat di rake:
+```
+rake
+```
+
 ## Kontribusi
 
 [![Contributors](https://img.shields.io/github/contributors/rails-id/rails-id.github.io.svg)](https://github.com/rails-id/rails-id.github.io/graphs/contributors)
