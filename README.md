@@ -40,7 +40,7 @@ Dan bagi yang non member Ruby on Rails Indonesia diharuskan untuk fork repositor
 git clone git@github.com:$USERNAME/$NAME_OF_REPOSITORY.git
 ```
 
-Selengkapnya bisa dilihat di [CONTRIBUTING.md](CONTRIBUTING.md) dan diharapkan untuk mengikuti [Kode Etik](CODE_OF_CONDUCT.md).
+Selengkapnya bisa dilihat di [Kontribusi](CONTRIBUTING.md) dan diharapkan untuk mengikuti [Kode Etik](CODE_OF_CONDUCT.md).
 
 ## Referensi
 - [github.com/github/pages-gem](https://github.com/github/pages-gem)
