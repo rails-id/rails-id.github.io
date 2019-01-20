@@ -2,6 +2,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - CNAME
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - Rakefile
+  - README.md  
 
 plugins:
   - jekyll-redirect-from
