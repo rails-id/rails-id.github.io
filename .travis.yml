@@ -11,7 +11,7 @@ addons:
     - "$SERVER_IP_ADDRESS"
     - "$SERVER_IP_ADDRESS:$PORT"
 before_install:
-  - ssh-keygen -R $SERVER_IP_ADDRESS
+  - rm -rf ~/.ssh/known_hosts
   - openssl aes-256-cbc -K $encrypted_9c5355402a97_key -iv $encrypted_9c5355402a97_iv
     -in deploy_key.enc -out ./deploy_key -d
   - eval "$(ssh-agent -s)"
