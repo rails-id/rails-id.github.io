@@ -6,8 +6,9 @@ rvm:
   - 2.6.0
   - ruby-head
 cache: bundler
-env:
-  - USER=ruby-on
+addons:
+  ssh_known_hosts:
+    - $SERVER_IP_ADDRESS:$PORT
 before_install:
   - openssl aes-256-cbc -K $encrypted_9c5355402a97_key -iv $encrypted_9c5355402a97_iv
     -in deploy_key.enc -out ./deploy_key -d
