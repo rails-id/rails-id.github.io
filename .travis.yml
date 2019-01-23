@@ -11,13 +11,14 @@ addons:
     - "$SERVER_IP_ADDRESS"
     - "$SERVER_IP_ADDRESS:$PORT"
 before_install:
-  - rm -rf ~/.ssh/known_hosts
   - openssl aes-256-cbc -K $encrypted_9c5355402a97_key -iv $encrypted_9c5355402a97_iv
     -in deploy_key.enc -out ./deploy_key -d
   - eval "$(ssh-agent -s)"
   - chmod 600 ./deploy_key
   - echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - ssh-add ./deploy_key
+  - ssh -o "UserKnownHostsFile /dev/null"
+  - cat ~/.ssh/config ~/.ssh/config/known_hosts
   - ssh -i ./deploy_key $USER@$SERVER_IP_ADDRESS -p $PORT pwd
   - rm Gemfile.lock -rf
   - travis_retry gem update --system
