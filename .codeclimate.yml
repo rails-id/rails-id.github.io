@@ -1,24 +1,24 @@
 checks:
-	argument-count:
-		enabled: true
-	file-lines:
-		enabled: true
-	method-complexity:
-		enabled: true
-	method-count:
-		enabled: true
-	method-lines:
-		enabled: true
+  argument-count:
+    enabled: true
+  file-lines:
+    enabled: true
+  method-complexity:
+    enabled: true
+  method-count:
+    enabled: true
+  method-lines:
+    enabled: true
 plugins:
-	fixme:
-		enabled: false
+  fixme:
+    enabled: false
 
 exclude_patterns:
-	- "*.*"
-	- ".*"
+  - "*.*"
+  - ".*"
 
-	- Gemfile
-	- LICENSE
-	- Rakefile
+  - Gemfile
+  - LICENSE
+  - Rakefile
 
-	- lib/
+  - lib/
