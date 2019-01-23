@@ -15,8 +15,9 @@ before_install:
     -in deploy_key.enc -out ./deploy_key -d
   - eval "$(ssh-agent -s)"
   - chmod 600 ./deploy_key
-  - echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n\tUserKnownHostsFile /dev/null\n\tLogLevel ERROR\n" >> ~/.ssh/config
+  - echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - ssh-add ./deploy_key
+  - ssh-keygen -R $SERVER_IP_ADDRESS
   - ssh -i ./deploy_key $USER@$SERVER_IP_ADDRESS -p $PORT pwd
   - rm Gemfile.lock -rf
   - travis_retry gem update --system
