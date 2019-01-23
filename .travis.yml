@@ -17,7 +17,6 @@ before_install:
   - chmod 600 ./deploy_key
   - echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - ssh-add ./deploy_key
-  - ssh -o "UserKnownHostsFile /dev/null"
   - cat ~/.ssh/config ~/.ssh/config/known_hosts
   - ssh -i ./deploy_key $USER@$SERVER_IP_ADDRESS -p $PORT pwd
   - rm Gemfile.lock -rf
