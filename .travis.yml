@@ -24,8 +24,9 @@ install:
   - travis_retry bundle
   - jekyll build
 after_success:
-  - git clone $REMOTE_FOR_DEPLOY repository && cp _site/* repository -R
-  - cd repository && git add --all && git commit -m "Deploy!"
-  - git push origin master
+  - test $TRAVIS_RUBY_VERSION = "2.6.0" &&
+    git clone $REMOTE_FOR_DEPLOY repository && cp _site/* repository -R &&
+    cd repository && git add --all && git commit -m "Deploy!" &&
+    git push origin master
 notifications:
   email: false
