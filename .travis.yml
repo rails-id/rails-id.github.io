@@ -5,11 +5,11 @@ rvm:
   - 2.5.3
   - 2.6.0
   - ruby-head
-cache: bundler
-addons:
-  ssh_known_hosts:
-    - "$SERVER_IP_ADDRESS"
-    - "$SERVER_IP_ADDRESS:$PORT"
+cache:
+  bundler: true
+  directories:
+    - vendor/bundle
+    - $HOME/.rvm
 before_install:
   - openssl aes-256-cbc -K $encrypted_9c5355402a97_key -iv $encrypted_9c5355402a97_iv
     -in deploy_key.enc -out ./deploy_key -d
@@ -18,15 +18,11 @@ before_install:
   - echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - ssh-add ./deploy_key
   - ssh -i ./deploy_key $USER@$SERVER_IP_ADDRESS -p $PORT pwd
-  - rm Gemfile.lock -rf
+install:
   - travis_retry gem update --system
   - travis_retry gem install bundler
   - travis_retry bundle
-install:
   - jekyll build
-branches:
-  only:
-    - master
 after_success:
   - git clone $REMOTE_FOR_DEPLOY repository && cp _site/* repository -R
   - cd repository && git add --all && git commit -m "Deploy!"
