@@ -5,6 +5,9 @@ rvm:
   - 2.5.3
   - 2.6.0
   - ruby-head
+branches:
+  only:
+    - master
 cache:
   bundler: true
   directories:
