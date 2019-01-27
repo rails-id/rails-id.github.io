@@ -39,7 +39,7 @@ Bagi member organisasi Ruby on Rails Indonesia bisa kontribusi langsung di remot
 $ git clone git@github.com:rails-id/rails-id.github.io.git
 ```
 
-Bagi non member Ruby on Rails Indonesia silakan untuk fork repositori ini, dan melakukan pull request.
+Bagi non member organisasi Ruby on Rails Indonesia silakan untuk fork repositori ini, melakukan perubahan, dan melakukan pull request.
 
 ```
 $ git clone git@github.com:$USERNAME/$NAME_OF_REPOSITORY.git
