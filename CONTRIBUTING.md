@@ -19,7 +19,7 @@
   ```
   - Ref: [Cloning a repository](https://help.github.com/articles/cloning-a-repository/)
 - Asumsikan kalian telah melakukan perubahan pada repositori.
-- Commit disarankan menggunakan karakter nomor [issues](issues), agar mudah melakukan tracking.
+- Commit disarankan menggunakan karakter nomor [issues](https://github.com/rails-id/rails-id.github.io/issues), agar mudah melakukan tracking.
   - Ref: [Autolinked references and URLs](https://help.github.com/articles/autolinked-references-and-urls/)
 - Selanjutnya `push` ke repositori kalian (tidak berlaku untuk member organisasi Ruby on Rails Indonesia).
   - Ref: [Pushing to a remote](https://help.github.com/articles/pushing-to-a-remote/)
