@@ -25,6 +25,7 @@ install:
   - travis_retry gem update --system
   - travis_retry gem install bundler
   - travis_retry bundle
+  - rake list:companies_id_ruby
   - jekyll build
 after_success:
   - test $TRAVIS_BRANCH = "master" && test $TRAVIS_RUBY_VERSION = "2.6.0" &&
