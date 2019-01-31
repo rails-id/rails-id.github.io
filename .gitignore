@@ -6,5 +6,7 @@ Gemfile.lock
 /.idea
 /.vscode
 .DS_Store
+/_data/companies_id_ruby.yml
+/assets/images/companies_id_ruby
 deploy_key
 deploy_key.pub

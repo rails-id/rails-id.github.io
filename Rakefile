@@ -30,16 +30,47 @@ end
 
 namespace :test do
   desc "Uji file YAML"
+
   task :yaml do
     require "yaml"
-    d = Dir["./**/*.yml"]
-    d.each do |file|
+
+    list_yaml = Dir["./**/*.yml"]
+
+    list_yaml.each do |file|
       begin
-        puts "checking : #{file}"
-        f = YAML.load_file(file)
+        puts "Checking : #{file}"
+        YAML.load_file(file)
       rescue Exception
-        puts "failed to read #{file}: #{$!}"
+        puts "Failed to read #{file}: #{$!}"
       end
     end
+  end
+end
+
+namespace :list do
+  desc "Generate semua Startup atau Perusahaan pengguna Ruby dan Rails di Indonesia"
+
+  task :companies_id_ruby do
+    require "open-uri"
+    require "yaml"
+
+    unless File.exist?(Dir.pwd + "/_data")
+      FileUtils.mkdir_p Dir.pwd + "/_data"
+    end
+
+    File.open(Dir.pwd + "/_data/companies_id_ruby.yml", "wb") {|file|
+      file.write open("https://raw.githubusercontent.com/id-ruby/id-ruby/master/_data/companies.yml").read
+    }
+
+    unless File.exist?(Dir.pwd + "/assets/images/companies_id_ruby")
+      FileUtils.mkdir_p Dir.pwd + "/assets/images/companies_id_ruby"
+    end
+
+    companies_id_ruby = YAML.load_file(Dir.pwd + "/_data/companies_id_ruby.yml")
+    companies_id_ruby.each {|company|
+      File.open(Dir.pwd + "/assets/images/companies_id_ruby/#{company['image_url'].gsub('images/', '')}", "wb") {|file|
+        file.write open("https://raw.githubusercontent.com/id-ruby/id-ruby/master/#{company['image_url']}").read
+      }
+    }
   end
 end
