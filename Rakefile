@@ -62,13 +62,13 @@ namespace :list do
       file.write open("https://raw.githubusercontent.com/id-ruby/id-ruby/master/_data/companies.yml").read
     }
 
-    unless File.exist?(Dir.pwd + "/assets/images/companies_id_ruby")
-      FileUtils.mkdir_p Dir.pwd + "/assets/images/companies_id_ruby"
+    unless File.exist?(Dir.pwd + "/assets/showcase/companies_id_ruby/images")
+      FileUtils.mkdir_p Dir.pwd + "/assets/showcase/companies_id_ruby/images"
     end
 
     companies_id_ruby = YAML.load_file(Dir.pwd + "/_data/companies_id_ruby.yml")
     companies_id_ruby.each {|company|
-      File.open(Dir.pwd + "/assets/images/companies_id_ruby/#{company['image_url'].gsub('images/', '')}", "wb") {|file|
+      File.open(Dir.pwd + "/assets/showcase/companies_id_ruby/#{company['image_url']}", "wb") {|file|
         file.write open("https://raw.githubusercontent.com/id-ruby/id-ruby/master/#{company['image_url']}").read
       }
     }
