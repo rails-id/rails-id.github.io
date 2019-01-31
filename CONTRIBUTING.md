@@ -4,6 +4,7 @@
 
 - Baca [README](README.md) terlebih dahulu.
 - Diharapkan sebelum berkontribusi kalian harus sudah mengikuti [Kode Etik](CODE_OF_CONDUCT.md).
+- Tidak lupa untuk menginstal plugin di sini [editorconfig](https://editorconfig.org/#download) sesuai dengan Text Editor atau IDE yang kalian gunakan.
 - Setiap kontributor harus memiliki konfigurasi git dengan akun GitHub yang sesuai dan benar.
   - Ref: [Why are my commits linked to the wrong user?](https://help.github.com/articles/why-are-my-commits-linked-to-the-wrong-user/)
 - Pastikan pengaturan waktu / tanggal pada local kalian sudah sesuai dan benar.
