@@ -1,6 +1,24 @@
 ---
 layout: page
-title: Startup atau Perusahaan pengguna Ruby dan Rails di Indonesia
+title: Startup atau Perusahaan yang menggunakan Teknologi Ruby dan Rails di Indonesia
 permalink: /company-use-rails/
-description:
+description: Startup atau Perusahaan yang menggunakan Teknologi Ruby dan Rails di Indonesia
 ---
+
+<section class="full">
+  <h1>Pengguna Ruby dan Rails di Indonesia</h1>
+
+  <p>Startup atau Perusahaan yang menggunakan Teknologi Ruby dan Rails di Indonesia</p>
+
+  <div class="companies">
+    {% for company in site.data.companies_id_ruby %}
+      <div class="company">
+        <a href="{{ company.url }}" target="_blank">
+          <image src="/assets/showcase/companies_id_ruby/{{ company.image_url }}">
+        </a>
+        <h3>{{ company.name }}</h3>
+        <p>{{ company.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>

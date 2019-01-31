@@ -11,3 +11,71 @@ Additional, Reset by Rails Indonesia
   background-color: #c52f24;
   box-shadow: 0 0 10px #e83a2d, 0 0 5px #e83a2d;
 }
+
+section.full {
+  width: unset;
+}
+
+.company img {
+  filter: grayscale(100%) !important;
+  -webkit-filter: grayscale(100%) !important;
+  -moz-filter: grayscale(100%) !important;
+  -o-filter: grayscale(100%) !important;
+}
+
+.company img:hover {
+  filter: none !important;
+  -webkit-filter: none !important;
+  -moz-filter: none !important;
+  -o-filter: none !important;
+}
+
+section.full {
+  text-align: center;
+  padding: 0 5%;
+  margin: 0 auto;
+  overflow: hidden; }
+  section.full .companies div {
+    float: left;
+    text-align: left;
+    margin: 2em 0 0 3%;
+    height: 18em;
+    overflow: hidden; }
+    section.full .companies div h3 {
+      font-size: 20px;
+      margin-bottom: 9px;
+      margin-top: 30px; }
+    section.full .companies div img {
+      height: 100px;
+      object-fit: contain;
+      max-width: 200px; }
+    section.full .companies div p {
+      font-size: 16px;
+      color: #65777c;
+      margin: 0 auto 1.5em;
+      line-height: 1.45; }
+    section.full .companies div a {
+      display: inline-block;
+      text-align: center;
+      width: 100%; }
+
+@media (min-width: 1211px) {
+  section.full .companies div {
+    width: 30%; } }
+@media (max-width: 1212px) {
+  section.full .companies {
+    overflow: hidden;
+    margin-left: 14%; }
+    section.full .companies div {
+      width: 35%;
+      margin: 2em 0 0 6%; } }
+@media (max-width: 970px) {
+  section.full .companies {
+    margin-left: 0; }
+    section.full .companies div {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 20px; }
+      section.full .companies div h3 {
+        margin-top: 10px; } }
