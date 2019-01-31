@@ -25,5 +25,5 @@
   - Ref: [Pushing to a remote](https://help.github.com/articles/pushing-to-a-remote/)
 - Yang terakhir lakukan `pull request` (tidak berlaku untuk member organisasi Ruby on Rails Indonesia).
   - Ref: [Creating a pull request](https://help.github.com/articles/creating-a-pull-request/)
-- Tidak ada langkah selanjutnya, karena disini kalian hanya menunggu review dari member organisasi Ruby on Rails Indonesia (tidak berlaku untuk member organisasi Ruby on Rails Indonesia).
+- Tidak ada langkah selanjutnya, karena di sini kalian hanya menunggu review dari member organisasi Ruby on Rails Indonesia (tidak berlaku untuk member organisasi Ruby on Rails Indonesia).
   - Ref: [Requesting a pull request review](https://help.github.com/articles/requesting-a-pull-request-review/)
