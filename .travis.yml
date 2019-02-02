@@ -26,7 +26,7 @@ install:
   - travis_retry gem install bundler
   - travis_retry bundle
   - rake list:companies_id_ruby
-  - JEKYLL_ENV=production jekyll build
+  - jekyll build
 after_success:
   - test $TRAVIS_BRANCH = "master" && test $TRAVIS_RUBY_VERSION = "2.6.0" &&
     git clone $REMOTE_FOR_DEPLOY repository && cp _site/* repository -R &&
