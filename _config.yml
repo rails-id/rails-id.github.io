@@ -23,3 +23,4 @@ defaults:
       path: ""
     values:
       image: https://avatars.githubusercontent.com/u/46654718
+ga_tracking_id: UA-133301636-1
