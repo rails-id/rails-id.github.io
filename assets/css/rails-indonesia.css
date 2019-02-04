@@ -269,52 +269,64 @@ a.button:hover {
  * Company use rails
  */
 
-section.full {
-  text-align: center;
-  padding: 0 5%;
-  margin: 0 auto;
-  overflow: hidden; }
-section.full .companies div {
+.companies {
+  overflow: hidden;
+  margin-top: 5em;
+}
+.companies div {
   float: left;
   text-align: left;
   margin: 2em 0 0 3%;
   height: 18em;
-  overflow: hidden; }
-section.full .companies div h3 {
+  overflow: hidden;
+}
+.companies div h3 {
   font-size: 20px;
   margin-bottom: 9px;
-  margin-top: 30px; }
-section.full .companies div img {
+  margin-top: 30px;
+}
+.companies div img {
   height: 100px;
   object-fit: contain;
-  max-width: 200px; }
-section.full .companies div p {
+  max-width: 200px;
+}
+.companies div p {
   font-size: 16px;
   color: #65777c;
   margin: 0 auto 1.5em;
-  line-height: 1.45; }
-section.full .companies div a {
+  line-height: 1.45;
+}
+.companies div a {
   display: inline-block;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+}
 
 @media (min-width: 1211px) {
-  section.full .companies div {
-    width: 30%; } }
+  .companies div {
+    width: 30%;
+  }
+}
 @media (max-width: 1212px) {
-  section.full .companies {
+  .companies {
     overflow: hidden;
-    margin-left: 14%; }
-  section.full .companies div {
+    margin-left: 14%;
+  }
+  .companies div {
     width: 35%;
-    margin: 2em 0 0 6%; } }
+    margin: 2em 0 0 6%;
+  }
+}
 @media (max-width: 970px) {
-  section.full .companies {
-    margin-left: 0; }
-  section.full .companies div {
+  .companies {
+    margin-left: 0;
+  }
+  .companies div {
     width: 100%;
     text-align: center;
-    margin: 0;
-    margin-bottom: 20px; }
-  section.full .companies div h3 {
-    margin-top: 10px; } }
+    margin: 0 0 20px 0;
+  }
+  .companies div h3 {
+    margin-top: 10px;
+  }
+}
