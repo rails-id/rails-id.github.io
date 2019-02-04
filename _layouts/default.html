@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/style.css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="/assets/css/rails-indonesia.css" media="screen" charset="utf-8">
-    {% seo %}
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/assets/js/turbolinks.js"></script>
-    {% if jekyll.environment == "production" %}
-      {% include google_analytics.html %}
-    {% endif %}
-  </head>
-
-  <body>
-    <div class="container">
-      {{ content }}
-    </div> <!-- /.container -->
-  </body>
-</html>
+---
+layout: application
+---
+<div class="container">
+  {{ content }}
+</div>

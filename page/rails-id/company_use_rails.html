@@ -14,7 +14,7 @@ description: Startup atau Perusahaan yang menggunakan Teknologi Ruby dan Rails d
     {% for company in site.data.companies_id_ruby %}
       <div class="company">
         <a href="{{ company.url }}" target="_blank">
-          <image src="/assets/showcase/companies_id_ruby/{{ company.image_url }}">
+          <img src="/assets/showcase/companies_id_ruby/{{ company.image_url }}" class="grayscale" alt="{{ company.name }}">
         </a>
         <h3>{{ company.name }}</h3>
         <p>{{ company.description }}</p>
