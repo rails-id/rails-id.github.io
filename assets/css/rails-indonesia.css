@@ -276,64 +276,64 @@ a.button:hover {
  * Company use rails
  */
 
-.companies {
+.three-column {
   overflow: hidden;
   margin-top: 5em;
 }
-.companies div {
+.three-column div {
   float: left;
   text-align: left;
   margin: 2em 0 0 3%;
   height: 18em;
   overflow: hidden;
 }
-.companies div h3 {
+.three-column div h3 {
   font-size: 20px;
   margin-bottom: 9px;
   margin-top: 30px;
 }
-.companies div img {
+.three-column div img {
   height: 100px;
   object-fit: contain;
   max-width: 200px;
 }
-.companies div p {
+.three-column div p {
   font-size: 16px;
   color: #65777c;
   margin: 0 auto 1.5em;
   line-height: 1.45;
 }
-.companies div a {
+.three-column div a {
   display: inline-block;
   text-align: center;
   width: 100%;
 }
 
 @media (min-width: 1211px) {
-  .companies div {
+  .three-column div {
     width: 30%;
   }
 }
 @media (max-width: 1212px) {
-  .companies {
+  .three-column {
     overflow: hidden;
     margin-left: 14%;
   }
-  .companies div {
+  .three-column div {
     width: 35%;
     margin: 2em 0 0 6%;
   }
 }
 @media (max-width: 970px) {
-  .companies {
+  .three-column {
     margin-left: 0;
   }
-  .companies div {
+  .three-column div {
     width: 100%;
     text-align: center;
     margin: 0 0 20px 0;
   }
-  .companies div h3 {
+  .three-column div h3 {
     margin-top: 10px;
   }
 }

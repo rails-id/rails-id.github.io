@@ -11,9 +11,9 @@ description: Startup atau Perusahaan yang menggunakan Teknologi Ruby dan Rails d
     <p>Startup atau Perusahaan yang menggunakan Teknologi Ruby dan Rails di Indonesia</p>
   </div>
 
-  <div class="companies">
+  <div class="three-column">
     {% for company in site.data.companies_id_ruby %}
-    <div class="company">
+    <div class="column">
       <a href="{{ company.url }}" target="_blank">
         <img src="/assets/showcase/companies_id_ruby/{{ company.image_url }}" class="grayscale" alt="{{ company.name }}">
       </a>
