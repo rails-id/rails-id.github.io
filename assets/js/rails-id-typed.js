@@ -52,7 +52,7 @@ $(function(){
       showCursor: false,
       typeSpeed: 30,
       callback: function() {
-        $(".output").html("# =&gt; arahkan browser ke <a href=\"http://localhost:3000\" target=\"_blank\">http://localhost:3000</a>")
+        $(".output").html("# =&gt; arahkan browser ke <a href=\"http://localhost:3000\" target=\"_blank\">localhost:3000</a>")
       }
     });
   }

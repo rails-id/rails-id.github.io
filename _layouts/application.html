@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  <link href="{{ '/assets/css/style.css' | prepend: site.url }}?{{ site.time | date: '%s%N' }}" rel="stylesheet" media="screen">
-  <link href="{{ '/assets/css/rails-indonesia.css' | prepend: site.url }}?{{ site.time | date: '%s%N' }}" rel="stylesheet" media="screen">
+  <link href="{{ '/assets/css/style.css' }}?{{ site.time | date: '%s%N' }}" rel="stylesheet" media="screen">
+  <link href="{{ '/assets/css/rails-indonesia.css' }}?{{ site.time | date: '%s%N' }}" rel="stylesheet" media="screen">
   {% seo %}
   <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="/assets/js/turbolinks.js"></script>
+  <script src="{{ '/assets/js/turbolinks.js' }}?{{ site.time | date: '%s%N' }}"></script>
   {% include google_analytics.html %}
 </head>
 
