@@ -2,6 +2,12 @@
 Additional, Reset by Rails Indonesia
 --------------------------------------------------*/
 
+@import "https://fonts.googleapis.com/css?family=Chelsea+Market";
+
+.font-chelsea-market {
+  font-family: 'Chelsea Market', Georgia, serif;
+}
+
 .text-center {
   text-align: center;
 }
@@ -222,23 +228,24 @@ section.full {
 .footer {
   background: #3e3e3e;
   color: #cc0000;
-  padding: 1em 0;
+  padding: 2em 0 1em 0;
   width: 100%;
   margin: 0 auto;
 }
 
 .footer a {
+  color: #cc0000;
   font-size: 17px;
 }
 
-p.we-love-rails {
+.we-love-rails {
   color: #eee;
-  font-size: 14px;
-  letter-spacing: 4px;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
-p.we-love-rails .heart {
-  color: #cc0000;
+.we-love-rails .heart {
+  color: #E03997;
 }
 
 /*
