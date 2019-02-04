@@ -29,7 +29,7 @@ install:
   - jekyll build
 after_success:
   - test $TRAVIS_BRANCH = "master" && test $TRAVIS_RUBY_VERSION = "2.6.0" &&
-    git clone $REMOTE_FOR_DEPLOY repository && cp _site/* repository -R &&
+    git clone $REMOTE_FOR_DEPLOY repository && rm -rf repository/* && cp _site/* repository -R &&
     cd repository && git add --all && git commit -m "Deploy!" &&
     git push origin master
 notifications:
