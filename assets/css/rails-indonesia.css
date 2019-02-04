@@ -44,8 +44,20 @@ Additional, Reset by Rails Indonesia
   background: linear-gradient(to top, rgb(236, 236, 236) 40%, transparent 0px);
 }
 
+/*
+ * Margin left-right 1em
+ */
+
 .margin-lr-1em {
   margin: 0 1em;
+}
+
+/*
+ * Margin bottom 5em
+ */
+
+.margin-bottom-1em {
+  margin-bottom: 5em;
 }
 
 /*
@@ -278,13 +290,11 @@ a.button:hover {
 
 .three-column {
   overflow: hidden;
-  margin-top: 5em;
 }
 .three-column div {
   float: left;
   text-align: left;
   margin: 2em 0 0 3%;
-  height: 18em;
   overflow: hidden;
 }
 .three-column div h3 {
@@ -307,6 +317,9 @@ a.button:hover {
   display: inline-block;
   text-align: center;
   width: 100%;
+}
+.three-column div a:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 1211px) {
@@ -337,6 +350,28 @@ a.button:hover {
     margin-top: 10px;
   }
 }
+
+/*
+ * less more
+ */
+
+.more-content span {
+  display: none;
+}
+
+.more-link {
+  display: block;
+}
+
+a.more-link {
+  text-align: left !important;
+  display: inline !important;
+  font-size: 13px !important;
+}
+
+/*
+ * hr wave
+ */
 
 .hr-wave {
   width: 100%;
