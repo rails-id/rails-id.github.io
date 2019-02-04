@@ -345,3 +345,8 @@ a.button:hover {
   border: 0;
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHZpZXdCb3g9IjAgMCAxMTkgNiI+PHBhdGggZD0iTTExOSAzLjhjLTYwIDIuNS0zMy41LTctMTE5IDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2NjMDAwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+) center/5em 100% repeat-x;
 }
+@media only screen and (max-width: 480px) {
+  .hr-wave {
+    margin: 1em 0;
+  }
+}
