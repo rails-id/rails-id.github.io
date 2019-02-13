@@ -357,3 +357,26 @@ a.more-link {
     margin: 1em 0;
   }
 }
+
+/*
+ * contributor
+ */
+
+.repositories {
+  clear: both;
+  display: flow-root;
+}
+.kontributor {
+  margin-bottom: 2em;
+}
+.kontributor .avatar {
+  border-radius: 50%;
+}
+.kontributor .login {
+  font-size: 17px;
+  line-height: 15px;
+  height: 20px;
+}
+.kontributor a.commit {
+  font-size: 14px;
+}
