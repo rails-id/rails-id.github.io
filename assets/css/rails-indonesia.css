@@ -4,6 +4,10 @@ Additional, Reset by Rails Indonesia
 
 @import "https://fonts.googleapis.com/css?family=Chelsea+Market";
 
+.row a:hover {
+  text-decoration: underline;
+}
+
 .font-chelsea-market {
   font-family: 'Chelsea Market', Georgia, serif;
 }
@@ -56,8 +60,16 @@ Additional, Reset by Rails Indonesia
  * Margin bottom 5em
  */
 
-.margin-bottom-1em {
+.margin-bottom-5em {
   margin-bottom: 5em;
+}
+
+/*
+ * Margin bottom 3em
+ */
+
+.margin-bottom-3em {
+  margin-bottom: 3em;
 }
 
 /*
@@ -285,70 +297,30 @@ a.button:hover {
 }
 
 /*
- * Company use rails
+ * custom-content-row
  */
 
-.three-column {
-  overflow: hidden;
-}
-.three-column div {
-  float: left;
-  text-align: left;
-  margin: 2em 0 0 3%;
-  overflow: hidden;
-}
-.three-column div h3 {
+.custom-content-row h3 {
   font-size: 20px;
   margin-bottom: 9px;
   margin-top: 30px;
 }
-.three-column div img {
-  height: 100px;
-  object-fit: contain;
-  max-width: 200px;
-}
-.three-column div p {
+.custom-content-row p {
   font-size: 16px;
   color: #65777c;
   margin: 0 auto 1.5em;
   line-height: 1.45;
-}
-.three-column div a {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-}
-.three-column div a:hover {
-  text-decoration: underline;
+  padding: 1em;
 }
 
-@media (min-width: 1211px) {
-  .three-column div {
-    width: 30%;
-  }
-}
-@media (max-width: 1212px) {
-  .three-column {
-    overflow: hidden;
-    margin-left: 14%;
-  }
-  .three-column div {
-    width: 35%;
-    margin: 2em 0 0 6%;
-  }
-}
-@media (max-width: 970px) {
-  .three-column {
-    margin-left: 0;
-  }
-  .three-column div {
-    width: 100%;
-    text-align: center;
-    margin: 0 0 20px 0;
-  }
-  .three-column div h3 {
-    margin-top: 10px;
-  }
+/*
+ * Max image
+ */
+
+img.img-200 {
+  height: 100px;
+  object-fit: contain;
+  max-width: 200px;
 }
 
 /*

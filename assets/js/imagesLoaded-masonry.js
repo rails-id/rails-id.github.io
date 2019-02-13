@@ -1,7 +1,7 @@
-$('.three-column').imagesLoaded( function() {
-  $('.three-column').masonry({
-    columnWidth: '.column',
-    itemSelector: '.column',
+$('.row').imagesLoaded( function() {
+  $('.row').masonry({
+    columnWidth: '.col-md-4',
+    itemSelector: '.col-md-4',
     animate: true,
     percentPosition: true
   })
