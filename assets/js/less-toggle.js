@@ -1,4 +1,4 @@
-$(document).ready(function () {
+document.addEventListener("turbolinks:load", function() {
   var showChar = (parseInt($('.show-more').data('less'))) ? parseInt($('.show-more').data('less')) : 0;
   var ellipsestext = "...";
   var moretext = "lihat lebih banyak";
@@ -14,7 +14,7 @@ $(document).ready(function () {
 
       var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="more-content"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="more-link">' + moretext + '</a></span>';
 
-      $(this).html(html);
+      $(this).html(html)
     }
 
   });
@@ -25,10 +25,10 @@ $(document).ready(function () {
       $(this).html(moretext);
     } else {
       $(this).addClass("less");
-      $(this).html(lesstext);
+      $(this).html(lesstext)
     }
     $(this).parent().prev().toggle();
     $(this).prev().toggle();
-    return false;
-  });
+    return false
+  })
 });
