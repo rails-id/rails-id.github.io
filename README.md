@@ -1,13 +1,17 @@
 <h1 align="center">Beranda Ruby on Rails Indonesia</h1>
 
 <p align="center">
-  <a href="https://getstisla.com">
+  <a href="http://rails.id">
     <img src="https://user-images.githubusercontent.com/3952281/52688710-1c66c400-2f8a-11e9-82a9-b5827bc9ccc9.png" alt="Rails Indonesia">
   </a>
 </p>
 
 <p align="center">
-  Repositori ini adalah hasil dari apa yang ada di situs web <a href="http://rails.id">rails.id</a>.
+  Repositori ini adalah hasil dari apa yang ada di situs web:
+  <br>
+  <a href="http://rails.id">
+    <strong>Rails Indonesia</strong>
+  </a>
 </p>
 
 
