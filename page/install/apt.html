@@ -9,7 +9,62 @@ description:
   <h1 class="text-center">Instalasi Ruby dan Rails di DEB Family (apt)</h1>
 
   <section class="margin-bottom-5em">
-    <code data-gist-id=""></code>
+    <h4 class="text-center">
+    <span class="word-bg font-chelsea-market">
+      Menggunakan RVM (rekomendasi)
+    </span>
+    </h4>
+
+    <p>
+      Sebelum melakukan instalasi Ruby dan Rails, kalian paling tidak sudah melakukan instalasi
+      dependensi yang di butuhkan untuk Ruby dan Rails, caranya cukup masukan perintah di bawah ini.
+      Perlu di ingat bahwa kalian bisa memilih beberapa paket di bawah ini sesuai kebutuhan masing-masing, ini sudah meliputi database MySQL / MariaDB, PostgreSQL, SQLite dan lain-lain:
+    </p>
+    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="dependencies-deb.sh"></code>
+
+    <p>
+      Instalasi kunci (key) GPG yang di butuhkan RVM:
+    </p>
+    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rvm-gpg.sh"></code>
+
+    <p>
+      Instalasi RVM:
+    </p>
+    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rvm-install.sh"></code>
+
+    <p>
+      Instalasi Ruby dengan versi yang di tentukan:
+    </p>
+    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rvm-install-version.sh"></code>
+
+    <p>
+      Untuk menetapkan versi Ruby sebagai bawaan (default):
+    </p>
+    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rvm-use-version-default.sh"></code>
+
+    <p>
+      Untuk melihat versi Ruby yang sedang di gunakan saat ini:
+    </p>
+    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="ruby-version.sh"></code>
+
+    <p>
+      Untuk melihat daftar Ruby yang ter-instal:
+    </p>
+    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rvm-list.sh"></code>
+
+
+    <h4 class="text-center">
+    <span class="word-bg font-chelsea-market">
+      Menggunakan RBENV (rekomendasi)
+    </span>
+    </h4>
+
+
+    <h4 class="text-center">
+    <span class="word-bg font-chelsea-market">
+      Compile dari Source Code
+    </span>
+    </h4>
   </section>
 
   {% include need_help.html %}
