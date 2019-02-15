@@ -10,15 +10,15 @@ description: Instalasi Ruby dan Rails di DEB Family (apt) seperti untuk distro D
 
   <section class="margin-bottom-5em">
     <p>
-      Sebelum melakukan instalasi Ruby dan Rails, kalian paling tidak sudah melakukan instalasi
-      dependensi yang di butuhkan untuk Ruby dan Rails, caranya cukup masukan perintah di bawah ini.
-      Perlu di ingat bahwa kalian bisa memilih beberapa paket di bawah ini sesuai dengan kebutuhan masing-masing,
+      Sebelum melakukan instalasi Ruby dan Rails, Kalian paling tidak sudah melakukan instalasi
+      dependensi yang dibutuhkan untuk Ruby dan Rails, caranya cukup masukan perintah di bawah ini.
+      Perlu diingat bahwa Kalian bisa memilih beberapa paket di bawah ini sesuai dengan kebutuhan masing-masing,
       ini juga sudah meliputi database seperti MySQL / MariaDB, PostgreSQL, SQLite dan lain-lain:
     </p>
     <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="dependencies-deb.sh"></code>
 
     <p>
-      Selanjutnya kalian hanya memilih salah satu di antara pilihan instalasi Ruby dan Rails di bawah ini:
+      Selanjutnya Kalian hanya memilih salah satu di antara pilihan instalasi Ruby dan Rails di bawah ini:
     </p>
 
     <ul>
@@ -44,7 +44,7 @@ description: Instalasi Ruby dan Rails di DEB Family (apt) seperti untuk distro D
     </p>
 
     <p>
-      Instalasi kunci (key) GPG yang di butuhkan RVM:
+      Instalasi kunci (key) GPG yang dibutuhkan RVM:
     </p>
     <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rvm-gpg.sh"></code>
 
@@ -101,13 +101,13 @@ description: Instalasi Ruby dan Rails di DEB Family (apt) seperti untuk distro D
 
     <p>
       Clone terlebih dahulu untuk repositori RBENV.
-      Ini akan melakukan set <code>$PATH</code> (environment variable) pada platform kalian.
+      Ini akan melakukan set <code>$PATH</code> (environment variable) pada platform Kalian.
     </p>
     <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rbenv-clone.sh"></code>
 
     <p>
       Clone terlebih dahulu untuk repositori RUBY-BUILD.
-      Ini juga akan melakukan set <code>$PATH</code> (environment variable) pada platform kalian.
+      Ini juga akan melakukan set <code>$PATH</code> (environment variable) pada platform Kalian.
     </p>
     <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rbenv-clone-ruby-build.sh"></code>
 
@@ -158,7 +158,7 @@ description: Instalasi Ruby dan Rails di DEB Family (apt) seperti untuk distro D
       Sebenarnya ini tidak di rekomendasikan development untuk Ruby dan Rails,
       terutama karena kita tidak bisa mengelola versi Ruby yang kita inginkan.
       Dengan Kalian menginstal Ruby dan Rails menggunakan Paket Manager yang artinya
-      Ruby dan Rails Kalian akan terinstal di user root (sudo).
+      Ruby dan Rails Kalian akan ter-instal oleh user root (sudo).
       <br>
       <br>
       Untuk dapat melakukan instalasi menggunakan paket manager, lakukan perintah:
@@ -166,8 +166,8 @@ description: Instalasi Ruby dan Rails di DEB Family (apt) seperti untuk distro D
     <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="sudo-apt-get-install-ruby-full.sh"></code>
 
     <p>
-      Instalasi menggunakan paket manager berarti kalian hanya di berikan versi ruby terbaru
-      yang hanya di sediakan dari repositori platform (debian/ubuntu) yang kalian gunakan.
+      Instalasi menggunakan paket manager berarti Kalian hanya di berikan versi ruby terbaru
+      yang hanya di sediakan dari repositori platform (debian/ubuntu) yang Kalian gunakan.
     </p>
 
     {% include install/gem.html %}
