@@ -66,6 +66,10 @@ $ git clone git@github.com:$USERNAME/$NAME_OF_REPOSITORY.git
 Selengkapnya bisa lihat di [Kontribusi](CONTRIBUTING.md) dan diharapkan untuk mengikuti [Kode Etik](CODE_OF_CONDUCT.md).
 
 
+## Startup / Perusahaan pengguna Rails
+- Silakan baca panduan di [tautan berikut](_data) untuk menambahkan daftar Perusahaan / Startup / Organisasi yang menggunakan teknologi Ruby on Rails.
+
+
 ## Referensi
 - [github.com/github/pages-gem](https://github.com/github/pages-gem)
 
