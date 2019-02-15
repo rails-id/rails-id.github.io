@@ -3,6 +3,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 exclude:
+  - .github
+  - .idea
+  - .vscode
   - Gemfile
   - Gemfile.lock
   - CNAME
