@@ -23,4 +23,5 @@ defaults:
       path: ""
     values:
       image: https://avatars.githubusercontent.com/u/46654718
+repository_url: https://github.com/rails-id/rails-id.github.io
 ga_tracking_id: UA-133301636-1

@@ -20,6 +20,12 @@
 <body>
   {{ content }}
 
+  {% unless page.path == 'index.html' %}
+  <div class="text-center margin-bottom-3em">
+    <a href="{{ site.repository_url }}/blob/master/{{ page.path }}" target="_blank" class="button">Edit halaman ini</a>
+  </div>
+  {% endunless %}
+
   <script src="{{ '/assets/js/typed.js' }}?{{ site.time | date: '%s%N' }}"data-turbolinks-track="reload" data-turbolinks-eval="false"></script>
   <script src="{{ '/assets/js/less-toggle.js' }}?{{ site.time | date: '%s%N' }}"data-turbolinks-track="reload" data-turbolinks-eval="false"></script>
   <script src="{{ '/assets/js/random.js' }}?{{ site.time | date: '%s%N' }}"data-turbolinks-track="reload" data-turbolinks-eval="false"></script>
