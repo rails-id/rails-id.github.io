@@ -381,3 +381,13 @@ a.more-link {
 .kontributor a.commit {
   font-size: 14px;
 }
+
+/*
+ * modified for https://github.com/tholman/github-corners
+ */
+
+@media only screen and (max-device-width: 480px) {
+  .github-corner {
+    display: none;
+  }
+}
