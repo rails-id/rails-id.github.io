@@ -48,7 +48,6 @@ $ rake
 
 
 ## Kontribusi
-
 Jika kalian melihat kesalahan pengejaan atau versi terbaru tidak sinkron, silakan untuk berkontribusi.
 
 Bagi member organisasi Ruby on Rails Indonesia bisa kontribusi langsung di remote `git@github.com:rails-id/rails-id.github.io.git`
@@ -75,5 +74,4 @@ Selengkapnya bisa lihat di [Kontribusi](CONTRIBUTING.md) dan diharapkan untuk me
 
 
 ## Lisensi
-
 Ruby on Rails Indonesia dirilis di bawah [Lisensi MIT](https://opensource.org/licenses/MIT).
