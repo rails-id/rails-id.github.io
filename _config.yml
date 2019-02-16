@@ -2,6 +2,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-gist
 exclude:
   - .github
   - .idea

@@ -15,7 +15,7 @@ description: Instalasi Ruby dan Rails di DEB Family (apt) seperti untuk distro D
       Perlu diingat bahwa Kalian bisa memilih beberapa paket di bawah ini sesuai dengan kebutuhan masing-masing,
       ini juga sudah meliputi database seperti MySQL / MariaDB, PostgreSQL, SQLite dan lain-lain:
     </p>
-    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="dependencies-deb.sh"></code>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c dependencies-deb.sh %}
 
     <p>
       Selanjutnya Kalian hanya memilih salah satu di antara pilihan instalasi Ruby dan Rails di bawah ini:
@@ -46,32 +46,32 @@ description: Instalasi Ruby dan Rails di DEB Family (apt) seperti untuk distro D
     <p>
       Instalasi kunci (key) GPG yang dibutuhkan RVM:
     </p>
-    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rvm-gpg.sh"></code>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rvm-gpg.sh %}
 
     <p>
       Instalasi RVM dengan versi stabil:
     </p>
-    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rvm-install.sh"></code>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rvm-install.sh %}
 
     <p>
       Instalasi Ruby dengan versi yang di tentukan:
     </p>
-    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rvm-install-version.sh"></code>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rvm-install-version.sh %}
 
     <p>
       Untuk menggunakan versi Ruby sebagai default atau global:
     </p>
-    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rvm-use-version.sh"></code>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rvm-use-version.sh %}
 
     <p>
       Untuk melihat versi Ruby yang sedang di gunakan:
     </p>
-    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="ruby-version.sh"></code>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c ruby-version.sh %}
 
     <p>
       Untuk melihat daftar Ruby yang terinstal:
     </p>
-    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rvm-list.sh"></code>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rvm-list.sh %}
 
     {% include install/gem.html %}
 
@@ -103,33 +103,33 @@ description: Instalasi Ruby dan Rails di DEB Family (apt) seperti untuk distro D
       Clone terlebih dahulu untuk repositori RBENV.
       Ini akan melakukan set <code>$PATH</code> (environment variable) pada platform Kalian.
     </p>
-    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rbenv-clone.sh"></code>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rbenv-clone.sh %}
 
     <p>
       Clone terlebih dahulu untuk repositori RUBY-BUILD.
       Ini juga akan melakukan set <code>$PATH</code> (environment variable) pada platform Kalian.
     </p>
-    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rbenv-clone-ruby-build.sh"></code>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rbenv-clone-ruby-build.sh %}
 
     <p>
       Instalasi Ruby dengan versi yang di tentukan:
     </p>
-    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rbenv-install-version.sh"></code>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rbenv-install-version.sh %}
 
     <p>
       Untuk menggunakan versi Ruby sebagai default atau global:
     </p>
-    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rbenv-use-version.sh"></code>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rbenv-use-version.sh %}
 
     <p>
       Untuk melihat versi Ruby yang sedang di gunakan:
     </p>
-    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="ruby-version.sh"></code>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c ruby-version.sh %}
 
     <p>
       Untuk melihat daftar Ruby yang terinstal:
     </p>
-    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="rbenv-list.sh"></code>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rbenv-list.sh %}
 
     {% include install/gem.html %}
 
@@ -163,7 +163,7 @@ description: Instalasi Ruby dan Rails di DEB Family (apt) seperti untuk distro D
       <br>
       Untuk dapat melakukan instalasi menggunakan paket manager, lakukan perintah:
     </p>
-    <code data-gist-id="ceed7e67ab2ff4cf64b0d2632e10e85c" data-gist-file="sudo-apt-get-install-ruby-full.sh"></code>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c sudo-apt-get-install-ruby-full.sh %}
 
     <p>
       Instalasi menggunakan paket manager berarti Kalian hanya di berikan versi ruby terbaru
