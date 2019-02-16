@@ -159,12 +159,17 @@ description: Instalasi Ruby dan Rails di DEB Family (apt) seperti untuk distro D
       <br>
       Untuk dapat melakukan instalasi menggunakan paket manager, lakukan perintah:
     </p>
+
     {% gist ceed7e67ab2ff4cf64b0d2632e10e85c sudo-apt-get-install-ruby-full.sh %}
 
     <p>
       Instalasi menggunakan paket manager berarti Kalian hanya di berikan versi ruby terbaru
       yang hanya di sediakan dari repositori platform (debian/ubuntu) yang Kalian gunakan.
     </p>
+
+    <div class="alert alert-warning">
+      Tip: Karena instalasi ini dilakukan oleh user root, maka gunakan `sudo` setiap perintahnya.
+    </div>
 
     {% include install/gem.html %}
 
