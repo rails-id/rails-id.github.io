@@ -36,7 +36,7 @@ $ bundle install
 $ jekyll build
 ```
 
-##### Untuk melihat hasil build:
+##### Untuk melihat serve sumber kode:
 ```
 $ jekyll serve
 ```
