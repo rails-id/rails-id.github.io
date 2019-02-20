@@ -142,10 +142,48 @@ description: Instalasi Ruby dan Rails di DEB Family (apt) seperti untuk distro D
     </span>
     </h4>
 
-    <!-- TODO: Work in progress -->
     <p>
-      Work in progress
+      Buat Kalian yang belum tahu tentang ASDF adalah alat command-line tunggal yang dapat mengelola beberapa versi runtime dengan
+      banyak bahasa pemrograman, diantaranya seperti Ruby, Node.js, Python, Elixir dan lain sebagainya yang bisa Kalian lihat <a href="https://github.com/asdf-vm/asdf-plugins#plugin-list" target="_blank">disini</a>.
+      Nah dengan kita menggunakan banyak bahasa pemrograman di ASDF ini harus memiliki plugin yang dapat digunakan untuk masing-masing bahasa pemrograman yang akan diinstal.
+      <br>
+      <br>
+      Untuk dapat menginstal Ruby dengan ASDF dan di lanjutkan dengan instalasi Rails, mari ikuti langkah-langkah dasar di bawah ini.
     </p>
+
+    <p>
+      Clone dan instal ASDF dari repository resmi:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c asdf-install.sh %}
+
+    <p>
+      Tambahakan plugin untuk menginstal Ruby:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c asdf-plugin-add-ruby.sh %}
+
+    <p>
+      Langsung saja masuk ke instalasi Ruby:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c asdf-install-ruby.sh %}
+
+    <p>
+      Jika sudah selesai, sekarang set versi Ruby yang akan di jadikan versi global dan local,
+      perintah di bawah ini akan membuat sebuah file yang bernama <code>.tool-versions</code> di direktori <code>$HOME</code>:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c asdf-global-ruby.sh %}
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c asdf-local-ruby.sh %}
+
+    <p>
+      Untuk melihat versi Ruby yang sedang di gunakan:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c ruby-version.sh %}
+
+    <p>
+      Untuk melihat daftar Ruby yang terinstal:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c asdf-list-ruby.sh %}
+
+    {% include install/gem.html %}
 
     <hr class="hr-wave">
 
