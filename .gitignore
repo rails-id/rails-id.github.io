@@ -2,7 +2,6 @@
 # Check out https://help.github.com/articles/ignoring-files for how to set that up.
 
 /_site
-Gemfile.lock
 /.idea
 /.vscode
 .DS_Store
