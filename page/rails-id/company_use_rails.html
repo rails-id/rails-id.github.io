@@ -12,22 +12,22 @@ description: Perusahaan / Startup / Organisasi yang menggunakan Teknologi Ruby d
   </div>
 
   <div class="row imagesLoaded-masonry">
-    {% for company in site.data.companies_id_ruby %}
+    {% for company in site.data.companies %}
     <div class="col-md-4 margin-bottom-3em random">
       <div class="custom-content-row text-center">
         <a href="{{ company.url }}" target="_blank">
-          <img src="/assets/showcase/companies_id_ruby/{{ company.image_url }}" class="img-200 grayscale" alt="{{ company.name }}">
+          <img src="/assets/showcase/companies/{{ company.image_url }}" class="img-200 grayscale" alt="{{ company.name }}">
         </a>
         <h3>{{ company.name }}</h3>
         <p class="show-more" data-less="100">{{ company.description }}</p>
       </div>
     </div>
     {% endfor %}
-    {% for company in site.data.companies %}
+    {% for company in site.data.companies_id_ruby %}
     <div class="col-md-4 margin-bottom-3em random">
       <div class="custom-content-row text-center">
         <a href="{{ company.url }}" target="_blank">
-          <img src="/assets/showcase/companies/{{ company.image_url }}" class="img-200 grayscale" alt="{{ company.name }}">
+          <img src="/assets/showcase/companies_id_ruby/{{ company.image_url }}" class="img-200 grayscale" alt="{{ company.name }}">
         </a>
         <h3>{{ company.name }}</h3>
         <p class="show-more" data-less="100">{{ company.description }}</p>
