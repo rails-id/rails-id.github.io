@@ -9,6 +9,229 @@ description: Instalasi Ruby dan Rails di RPM Family (yum) seperti untuk distro R
   <h1 class="text-center">Instalasi Ruby dan Rails di RPM Family (yum)</h1>
 
   <section class="margin-bottom-5em">
+    <p>
+      Sebelum melakukan instalasi Ruby dan Rails, Kalian paling tidak sudah melakukan instalasi
+      dependensi yang dibutuhkan untuk Ruby dan Rails, Kalian bisa melihat di dokumentasi
+      <a href="https://guides.rails.id/development_dependencies_install.html">Development Dependensi</a> yang tersedia.
+      Perlu diingat bahwa Kalian bisa memilih beberapa paket di bawah ini sesuai dengan kebutuhan masing-masing,
+      ini juga sudah meliputi database seperti MySQL / MariaDB, PostgreSQL, SQLite dan lain-lain.
+      Untuk dapat melanjutkan instalasi development dependensi caranya cukup masukan perintah di bawah ini:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c dependencies-yum.sh %}
+
+    <p>
+      Selanjutnya Kalian hanya memilih salah satu di antara pilihan instalasi Ruby dan Rails di bawah ini:
+    </p>
+
+    <ul>
+      <li><a href="#rvm">Menggunakan RVM</a></li>
+      <li><a href="#rbenv">Menggunakan RBENV</a></li>
+      <li><a href="#asdf">Menggunakan ASDF</a></li>
+      <li><a href="#package-manager">Menggunakan Paket Manager (Tidak di rekomendasikan)</a></li>
+    </ul>
+
+    <hr class="hr-wave">
+
+    <h4 class="text-center" id="rvm">
+    <span class="word-bg font-chelsea-market">
+      Menggunakan RVM
+    </span>
+    </h4>
+
+    <p>
+      Kita pengenalan dulu dengan RVM, apa sih RVM? Menurut dari <a href="https://rvm.io" target="_blank">situs resmi RVM</a> adalah
+      alat command-line yang memungkinkan Kalian untuk dengan mudah menginstal, mengelola, dan
+      bekerja dengan beberapa environment ruby ​​dari interpreter ke sekumpulan <a href="https://rubygems.org" target="_blank">gem</a>.
+      Untuk instalasinya yuk ikuti intruksi di bawah ini.
+    </p>
+
+    <p>
+      Instalasi kunci (key) GPG yang dibutuhkan RVM:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rvm-gpg.sh %}
+
+    <p>
+      Instalasi RVM dengan versi stabil:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rvm-install.sh %}
+
+    <p>
+      Untuk melihat daftar Ruby yang tersedia, lakukan perintah berikut:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rvm-list-known.sh %}
+
+    <p>
+      Instalasi Ruby dengan versi yang di tentukan:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rvm-install-version.sh %}
+
+    <p>
+      Untuk menggunakan versi Ruby sebagai default atau global:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rvm-use-version.sh %}
+
+    <p>
+      Untuk melihat versi Ruby yang sedang di gunakan:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c ruby-version.sh %}
+
+    <p>
+      Untuk melihat daftar Ruby yang terinstal:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rvm-list.sh %}
+
+    {% include install/gem.html %}
+
+    <hr class="hr-wave">
+
+    <h4 class="text-center" id="rbenv">
+    <span class="word-bg font-chelsea-market">
+      Menggunakan RBENV
+    </span>
+    </h4>
+
+    <p>
+      <a href="https://github.com/rbenv/rbenv" target="_blank">RBENV</a> ini tidak beda jauh dengan RVM, cuma menurut readme repositori resmi rbenv menjamin bahwa
+      environment development dan production itu akan sama, minim error, banyak plugin yang bisa di pakai.
+      Untuk bisa menginstal Ruby dengan rbenv kita membutuhkan plugin dari rbenv yaitu ruby-build.
+      <br>
+      <br>
+      Nah apa lagi ini RUBY-BUILD? Menurut dari <a href="https://github.com/rbenv/ruby-build" target="_blank">repositori resmi ruby-build</a>
+      adalah command-line utilitas yang memudahkan untuk menginstal semua versi Ruby, dari source.
+      Ini tersedia sebagai plugin untuk rbenv yang menyediakan perintah <code>rbenv install</code>,
+      atau sebagai program standalone (mandiri). Untuk instalasinya yuk ikuti intruksi di bawah ini.
+    </p>
+
+    <p>
+      Clone terlebih dahulu untuk repositori RBENV.
+      Ini akan melakukan set <code>$PATH</code> (environment variable) pada platform Kalian.
+    </p>
+
+    <div class="alert alert-warning">
+      Tip: Kalian bisa rubah <code>~/.bashrc</code> dengan shell yang Kalian gunakan, untuk mengetahui shell apa yang Kalian gunakan masukan perintah <code>echo $SHELL</code>.
+    </div>
+
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rbenv-clone.sh %}
+
+    <p>
+      Clone terlebih dahulu untuk repositori RUBY-BUILD.
+      Ini juga akan melakukan set <code>$PATH</code> (environment variable) pada platform Kalian.
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rbenv-clone-ruby-build.sh %}
+
+    <p>
+      Untuk melihat daftar Ruby yang tersedia, lakukan perintah berikut:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rbenv-install-list.sh %}
+
+    <p>
+      Instalasi Ruby dengan versi yang di tentukan:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rbenv-install-version.sh %}
+
+    <p>
+      Untuk menggunakan versi Ruby sebagai default atau global:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rbenv-use-version.sh %}
+
+    <p>
+      Untuk melihat versi Ruby yang sedang di gunakan:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c ruby-version.sh %}
+
+    <p>
+      Untuk melihat daftar Ruby yang terinstal:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c rbenv-list.sh %}
+
+    {% include install/gem.html %}
+
+    <hr class="hr-wave">
+
+    <h4 class="text-center" id="asdf">
+    <span class="word-bg font-chelsea-market">
+      Menggunakan ASDF
+    </span>
+    </h4>
+
+    <p>
+      Buat Kalian yang belum tahu tentang ASDF adalah alat command-line tunggal yang dapat mengelola beberapa versi runtime dengan
+      banyak bahasa pemrograman, diantaranya seperti Ruby, Node.js, Python, Elixir dan lain sebagainya yang bisa Kalian lihat <a href="https://github.com/asdf-vm/asdf-plugins#plugin-list" target="_blank">disini</a>.
+      Nah dengan kita menggunakan banyak bahasa pemrograman di ASDF ini harus memiliki plugin yang dapat digunakan untuk masing-masing bahasa pemrograman yang akan diinstal.
+      <br>
+      <br>
+      Untuk dapat menginstal Ruby dengan ASDF dan di lanjutkan dengan instalasi Rails, mari ikuti langkah-langkah dasar di bawah ini.
+    </p>
+
+    <p>
+      Clone dan instal ASDF dari repository resmi:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c asdf-install.sh %}
+
+    <p>
+      Tambahakan plugin untuk menginstal Ruby:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c asdf-plugin-add-ruby.sh %}
+
+    <p>
+      Untuk melihat daftar Ruby yang tersedia, lakukan perintah berikut:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c asdf-list-all-ruby.sh %}
+
+    <p>
+      Instalasi Ruby dengan versi yang di tentukan:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c asdf-install-ruby.sh %}
+
+    <p>
+      Jika sudah selesai, sekarang set versi Ruby yang akan di jadikan versi global dan local,
+      perintah di bawah ini akan membuat sebuah file yang bernama <code>.tool-versions</code> di direktori <code>$HOME</code>:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c asdf-global-ruby.sh %}
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c asdf-local-ruby.sh %}
+
+    <p>
+      Untuk melihat versi Ruby yang sedang di gunakan:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c ruby-version.sh %}
+
+    <p>
+      Untuk melihat daftar Ruby yang terinstal:
+    </p>
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c asdf-list-ruby.sh %}
+
+    {% include install/gem.html %}
+
+    <hr class="hr-wave">
+
+    <h4 class="text-center" id="package-manager">
+    <span class="word-bg font-chelsea-market">
+      Menggunakan Paket Manager (Tidak di rekomendasikan)
+    </span>
+    </h4>
+
+    <p>
+      Sebenarnya ini tidak di rekomendasikan development untuk Ruby dan Rails,
+      terutama karena kita tidak bisa mengelola versi Ruby yang kita inginkan.
+      Dengan Kalian menginstal Ruby dan Rails menggunakan Paket Manager yang artinya
+      Ruby dan Rails Kalian akan terinstal oleh user root (sudo).
+      <br>
+      <br>
+      Untuk dapat melakukan instalasi menggunakan paket manager, lakukan perintah:
+    </p>
+
+    {% gist ceed7e67ab2ff4cf64b0d2632e10e85c sudo-apt-get-install-ruby-full.sh %}
+
+    <p>
+      Instalasi menggunakan paket manager berarti Kalian hanya di berikan versi ruby terbaru
+      yang hanya di sediakan dari repositori platform yang Kalian gunakan.
+    </p>
+
+    <div class="alert alert-warning">
+      Tip: Karena instalasi ini dilakukan oleh user root, maka gunakan <code>sudo</code> setiap perintah di bawah.
+    </div>
+
+    {% include install/gem.html %}
 
   </section>
 
