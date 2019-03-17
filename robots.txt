@@ -1,0 +1,1 @@
+Sitemap: https://rails.id/sitemap.xml
