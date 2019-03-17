@@ -33,5 +33,16 @@ after_success:
     git clone $REMOTE_FOR_DEPLOY repository && rm -rf repository/* && cp _site/* repository -R &&
     cd repository && git add --all && git commit -m "Deploy!" &&
     git push origin master
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  github-token: $GITHUB_TOKEN
+  local-dir: _site
+  target-branch: gh-pages
+  fqdn: rails.id
+  on:
+    branch: master
+    rvm: 2.6.0
 notifications:
   email: false
