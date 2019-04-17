@@ -1,7 +1,6 @@
 sudo: false
 language: ruby
 rvm:
-  - 2.4.5
   - 2.5.5
   - 2.6.2
   - ruby-head
@@ -26,9 +25,9 @@ before_install:
 install:
   - travis_retry gem update --system
   - travis_retry gem install bundler
-  - travis_retry bundle
+  - travis_retry bundle install
+  - travis_retry bundle update
   - rake list:companies_id_ruby
-  - rm Gemfile.lock
   - bundle exec jekyll build
 after_success:
   - test $TRAVIS_BRANCH = "master" && test $TRAVIS_RUBY_VERSION = $RUBY_VERSION_FOR_DEPLOY &&
