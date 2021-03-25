@@ -1,12 +1,145 @@
 ---
 layout: page
-title: Instalasi Ruby dan Rails di macOS
+title: Menginstal Ruby dan Rails di macOS
 permalink: /install/homebrew/
-description: Instalasi Ruby dan Rails di macOS.
+description: Menginstal Ruby dan Rails di macOS.
 ---
 
 <section>
-  <h1 class="text-center">Instalasi Ruby dan Rails di macOS</h1>
+  <h1 class="text-center">Menginstal Ruby dan Rails di macOS</h1>
+
+  <h2>Menginstal Homebrew</h2>
+
+    Jalankan perintah berikut untuk menginstall Homebrew:
+
+    {% highlight bash session %}
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    {% endhighlight %}
+
+  <h2>Menginstal RVM</h2>
+    <h3>Menginstal GPG keys</h3>
+
+      Sebagai langkah awal, menginstal GPG keys untuk memverifikasi paket yang diinstal:
+
+      {% highlight bash session %}
+      gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+      {% endhighlight %}
+
+    <h3>Menginstal RVM versi stabil terbaru</h3>
+
+      {% highlight bash %}
+      \curl -sSL https://get.rvm.io | bash -s stable
+      {% endhighlight %}
+
+      <h4>Cek versi RVM</h4>
+        Anda dapat mengecek versi RVM terinstal dengan menjalankan perintah berikut:
+
+        {% highlight bash %}
+        rvm -v
+        {% endhighlight %}
+
+  <h2>Menginstall Ruby</h2>
+    Jalankan perintah berikut untuk menginstall Ruby versi 3.0.0
+
+    {% highlight bash %}
+    rvm install 3.0.0
+    {% endhighlight %}
+
+    <h3>Cek versi ruby</h3>
+      Anda dapat mengecek versi RVM terinstal dengan menjalankan perintah berikut:
+
+      {% highlight bash %}
+      ruby -v
+      {% endhighlight %}
+
+  <h2>Menginstal Ruby on Rails</h2>
+    Jalankan perintah berikut untuk menginstall Ruby on Rails versi 6.1.1
+
+    {% highlight bash %}
+    gem install rails -v 6.1.1
+    {% endhighlight %}
+
+    <h3>Cek versi Ruby on Rails</h3>
+      Anda dapat mengecek versi Ruby on Rails terinstal dengan menjalankan perintah berikut:
+
+      {% highlight bash %}
+      rails -v
+      {% endhighlight %}
+
+  <h2>Menginstal Database</h2>
+    Langkah selanjutnya yakni menginstal database, Anda dapat memilih salah satu dari database berikut:
+
+    <h3>SQLite</h3>
+      Jalankan perintah berikut untuk menginstal SQLite:
+
+        {% highlight bash %}
+        brew install sqlite3
+        {% endhighlight %}
+
+    <h3>MySQL</h3>
+      Jalankan perintah berikut untuk menginstal MySQL:
+
+        {% highlight bash %}
+        brew install mysql
+        {% endhighlight %}
+
+      <h4>Menjalankan service MySQL</h4>
+
+        {% highlight bash %}
+        brew service start mysql
+        {% endhighlight %}
+
+    <h3>PostgreSQL</h3>
+      Jalankan perintah berikut untuk menginstal PostgreSQL:
+
+      {% highlight bash %}
+      brew install postgresql
+      {% endhighlight %}
+
+      <h4>Menjalankan service PostgreSQL</h4>
+
+        {% highlight bash %}
+        brew service start postgresql
+        {% endhighlight %}
+
+  <h2>Mulai membangun aplikasi dengan Ruby on Rails</h2>
+    Pilih salah satu perintah berikut untuk membangun aplikasi pertamamu dengan Ruby on Rails menggunakan database pilihanmu
+
+    {% highlight bash %}
+    # untuk membuat aplikasi menggunakan sqlite3
+    rails new nama_aplikasimu
+
+    # untuk membuat aplikasi menggunakan sqlite3
+    rails new nama_aplikasimu -d mysql
+
+    # untuk membuat aplikasi menggunakan sqlite3
+    rails new nama_aplikasimu -d postgresql
+
+    {% endhighlight %}
+
+    Langkah selanjutnya, masuklah ke folder nama_aplikasimu dengan cara:
+
+    {% highlight bash %}
+    cd nama_aplikasimu
+    {% endhighlight %}
+
+    Membuat database untuk aplikasimu
+
+    {% highlight bash %}
+    rails db:create
+    {% endhighlight %}
+
+    Menjalankan aplikasimu:
+
+    {% highlight bash %}
+    rails server
+    # atau
+    rails s
+    {% endhighlight %}
+
+
+
+
 
   <section class="margin-bottom-5em">
 
